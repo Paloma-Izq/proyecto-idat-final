@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="overlay-menu" id="menu">
+        <div class="overlay-menu-exit"><span class="material-symbols-outlined overlay-menu-exit-symbol" onclick="toggleMenu()">
+            close
+            </span></div>
+        <div class="overlay-menu-container">
+            <div class="overlay-menu-top">
+                <div class="overlay-menu-title">SHOPPING CART</div>
+            </div>
+                <ul id="cart" class="overlay-menu-items">
+                    <!-- Lista de productos en el carrito -->
+                </ul>
+            <div class="overlay-menu-total">Total: $<span id="total">0.00</span></div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products-shopping-symbol-dot"><span class="dot"></span></div>
+        <div class="products-shopping-symbol" id="button-toggle-menu" onclick="toggleMenu()"><span class="material-symbols-outlined">shopping_bag</span></div>
+        <div class="front-navi">
+            <a href="index.html"><button class="front-navi-button">INICIO</button></a>
+            <button class="front-navi-button">botón 1</button>
+            <button class="front-navi-button">botón 2</button>
+        </div>
+        <div class="products-main">
+            <div class="products-sidebar">
+                <div class="product-sidebar-background">
+                    <div class="products-sidebar-link-one">TODOS LOS PRODUCTOS</div>
+                    <p class="products-sidebar-link-one">
+                        <a class="products-sidebar-link-one" data-bs-toggle="collapse" href="#nendoroids_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          NENDOROIDS
+                        </a>
+                    </p>
+                    <div class="collapse" id="nendoroids_collapse">
+                        <p class="products-sidebar-link-two">Bluelock</p>
+                        <p class="products-sidebar-link-two">Banana Fish</p>
+                        <p class="products-sidebar-link-two">Chainsaw Man</p>
+                        <p class="products-sidebar-link-two">Haikyuu!!</p>
+                        <p class="products-sidebar-link-two">Jujutsu Kaisen</p>
+                        <p class="products-sidebar-link-two">Shingeki no Kyojin</p>
+                    </div>
+                    <p class="products-sidebar-link-one">
+                        <a class="products-sidebar-link-one" data-bs-toggle="collapse" href="#lookup_collapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          LOOK UP! SERIES
+                        </a>
+                    </p>
+                    <div class="collapse" id="lookup_collapse">
+                        <p class="products-sidebar-link-two">Bluelock</p>
+                    </div>
+                </div>
+            </div>
+            <div class="productsall row row-cols-1 row-cols-md-3 g-4" id="productsall">
+                <div class="col item">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/products/bluelock/chigiri1.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" data-id="1">CHIGIRI HYOMA</h5>
+                            <p class="card-text">$20 + envío</p>
+                            <a href="#" class="btn btn-primary" onclick="addToCart(1, 'Producto 1', 10)">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/products/bluelock/bachira1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">BACHIRA MEGURU</h5>
+                        <p class="card-text">$20 + envío</p>
+                        <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/products/bluelock/isagi1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">ISAGI YOICHI</h5>
+                        <p class="card-text">$20 + envío</p>
+                        <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="card" style="width: 16rem;">
+                        <img src="img/products/bluelock/nagi1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">NAGI SEISHIRO</h5>
+                        <p class="card-text">$20 + envío</p>
+                        <a href="#" class="btn btn-primary">AÑADIR AL CARRITO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>

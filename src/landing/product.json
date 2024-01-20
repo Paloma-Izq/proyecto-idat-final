@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "name": "Ash - Banana Fish",
+        "price": 20,
+        "image": "img/products/banana/ash1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Eiji - Banana Fish",
+        "price": 20,
+        "image": "img/products/banana/eiji1.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Bachira Meguru - Bluelock",
+        "price": 20,
+        "image": "img/products/bluelock/bachira1.jpg"
+    }
+    ,
+    {
+        "id": 4,
+        "name": "Chigiri Hyoma - Bluelock",
+        "price": 20,
+        "image": "img/products/bluelock/chigiri2.webp"
+    },
+    {
+        "id": 5,
+        "name": "Sitting Isagi Yoichi - Bluelock",
+        "price": 20,
+        "image": "img/products/bluelock/isagi2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Standing Isagi Yoichi - Bluelock",
+        "price": 20,
+        "image": "img/products/bluelock/isagi1.webp"
+    }
+    {
+        "id": 6,
+        "name": "Standing Isagi Yoichi - Bluelock",
+        "price": 20,
+        "image": "img/products/bluelock/isagi1.webp"
+    }
+]

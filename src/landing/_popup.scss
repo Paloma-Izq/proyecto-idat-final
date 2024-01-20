@@ -1,0 +1,64 @@
+.register {
+    &-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25rem;
+    padding: 3rem;
+    background: white;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: none;
+
+    &.active {
+        top: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+        display: block;
+    }
+
+    &-title {
+        color: var(--blue);
+        text-align: center;
+        font-weight: 600;
+    }
+    }
+
+    &-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 15px;
+        height: 15px;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &-form-element {
+        line-height: 1.3rem;
+        margin-top: 1rem;
+
+        & input[type="text"] {
+            padding: 0.3rem;
+            width: 13rem;
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+    }
+
+    &-send-btn {
+        border-radius: 50px;
+        border: none;
+        background: var(--blue);
+        color: white;
+        width: 11rem;
+        height: 2.5rem;
+    }
+
+}

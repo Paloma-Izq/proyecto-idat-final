@@ -1,0 +1,63 @@
+.overlay-menu {
+    color: white;
+    background-color: var(--blue);
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: -300px;
+    transition: right .5s ease-in-out;
+    z-index: 15;
+    
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%
+    }
+    
+    &-top {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        height: 8rem;
+        width: 100%;
+    }
+
+    &-exit {
+        color: rgba(128, 128, 128, 0.5);
+        size: 1rem;
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+
+        &-symbol {
+            font-size: 1rem;
+        }
+    }
+
+    &-title {
+        
+        font-size: 1.5rem;
+    }
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    &-total {
+        display: flex;
+        height: 8rem;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
+}
+.overlay-menu--is-open {
+    right: 0px;
+}

@@ -1,0 +1,76 @@
+.material-symbols-sharp {
+    font-size: 4em;
+    padding: 20px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 200,
+      'GRAD' 200,
+      'opsz' 48
+  }
+
+.arrow-down {    
+    &-front {
+        position: absolute;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;  
+        color: var(--blue);
+        z-index: 15;      
+        bottom: 0;
+        right: 0;
+    }
+    
+    &-new-collection {
+        position: absolute;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;
+        color: var(--lilac);
+        z-index: 15; 
+        bottom: 0;
+        right: 0;
+    }
+
+    &-clients {
+        position: absolute;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;
+        color: var(--blue);
+        z-index: 20; 
+        bottom: 0;
+        right: 0;
+    }
+
+    &-about-us {
+        position: absolute;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;
+        color: var(--lilac);
+        z-index: 15; 
+        bottom: 0;
+        right: 0;
+    }
+
+    &-contact-us {
+        position: absolute;
+        width: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 15vh;
+        color: var(--blue);
+        z-index: 15; 
+        bottom: 0;
+        right: 0;
+    }
+}
